@@ -183,6 +183,6 @@ The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
 
 ##Step 8: Other demos
 
-I think by now you should be getting the hang of navigating up into the parent `hello_pi` folder (using `cd ..`) and then down into one of the demo folders (using cd `hello_something`).  Try some of the other demos on your own.  The `hello_videocube` one is quite good.
+I think by now you should be getting the hang of navigating up into the parent `hello_pi` folder (using `cd ..`) and then down into one of the demo folders (using `cd hello_something`).  Try some of the other demos on your own.  The `hello_videocube` one is quite good.
 
 Good luck!
