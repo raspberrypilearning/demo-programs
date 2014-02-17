@@ -61,7 +61,7 @@ A lot of text will scroll up the screen now, you can ignore it.  It is just the 
 
 Now we’re ready to run some demos.
 
-##Hello video
+##Step 3: Hello video
 
 This will play a 15 second long full HD 1080p video clip with no sound, the intention here is to demonstrate video decode and playback capability.  You’ll see its very smooth!
 
@@ -80,7 +80,7 @@ Use the following command to run the demo. You need the `./` to specify the curr
 
 `./hello_video.bin test.h264`
 
-##Hello triangle
+##Step 4: Hello triangle
 
 This displays a spinning cube with different images on each side.  This is intended to demonstrate Open GL ES rendering (an open source programming library for doing 3D graphics).
 
@@ -98,7 +98,7 @@ You’ll again see one of the files is green, this is the executable file.  This
 
 The demo will run forever until you decide to quit.  To exit the demo press `Ctrl – C`.
 
-##Hello triangle 2
+##Step 5: Hello triangle 2
 
 This one displays two superimposed fractals, one on top of the other.  You can move the mouse to change the shape of the fractal in real time.  This is also intended to demonstrate Open GL ES rendering.  Some of you may recognise the Mandelbrot fractal.
 
@@ -110,8 +110,79 @@ cd hello_triangle2
 ls
 ```
 
-Notice the green `.bin` file?  Okay run it.  Getting the hang of this now?
+Notice the green `.bin` file?  Okay run it.
 
 `./hello_triangle2.bin`
 
 Now move the mouse around and you’ll see the fractal changing.  See if you can get it to form a perfect circle.  It’s a little tricky but it can be done.  To exit the demo press `Ctrl – C`.
+
+##Step 6: Hello teapot
+This displays a spinning teapot with the video clip from `hello_video` texture-mapped onto its surface.  Impressive.  You may recognise the teapot model if you’re familiar with a piece of software called Blender.  This demonstrates Open GL ES rendering and video decode/playback at the same time.
+
+![image](./images/teapot.jpg "Tea Pot")
+
+```
+cd ..
+cd hello_teapot
+ls
+```
+
+Notice the green `.bin` file?  Okay run it.  Getting the hang of this now?
+
+`./hello_teapot.bin`
+
+You may receive the following error when you try to run this demo.  Don’t worry though, you just need to alter one configuration setting to make it work.  See below.
+
+```
+Note: ensure you have sufficient gpu_mem configured
+eglCreateImageKHR:  failed to create image for buffer 0x1 target 12465 error 0x300c
+eglCreateImageKHR failed.
+```
+
+The error means the GPU (graphics processing unit) does not have enough memory to run the demo.  It’s the GPU that does all the heavy lifting when drawing 3D graphics to the screen (a bit like a graphics card found in a gaming PC).  The Raspberry Pi shares its memory/RAM between the CPU and GPU and by default is configured to only give 64 MB of RAM to the GPU.  If we increase this to 128 that should do it.
+
+Here is how to do that.  Enter the following command.
+
+`sudo raspi-config`
+
+This will open up a menu on a blue background.  Perform the following actions.
+* Go to Advanced Options
+* Go to Memory Split
+* Delete back 64 and enter 128, press enter
+* Go down to Finish
+* Say Yes to reboot
+
+After you have logged back in enter the following command to get back to the `hello_teapot` demo.
+
+`cd /opt/vc/src/hello_pi/hello_teapot`
+
+Now try and run it again and you should find it will work.
+
+`./hello_teapot.bin`
+
+The demo will run forever until you quit. To exit the demo press `Ctrl – C`. 
+
+##Step 7: Hello audio
+This demo just demonstrates audio output.  It plays a sine wave which makes a kind of WOO WOO WOO sound.
+
+```
+cd ..
+cd hello_audio
+ls
+```
+
+Notice the green `.bin` file?  Okay run it.  Getting the hang of this now?
+
+`./hello_audio.bin`
+
+This will play the sound over the headphone jack on the Pi, if you’re using a HDMI monitor you can make it output over HMDI by adding a `1` to the command.
+
+`./hello_audio.bin 1`
+
+The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
+
+##Step 8: Other demos
+
+I think by now you should be getting the hang of navigating up into the parent `hello_pi` folder (using cd ..) and then down into one of the demo folders (using cd `hello_something`).  Try some of the other demos on your own.  The `hello_videocube` one is quite good.
+
+Good luck!
