@@ -51,7 +51,7 @@ The command prompt should now look like this, the blue part shows where you are 
 
 `pi@raspberrypi /opt/vc/src/hello_pi $ _`
 
-If you enter ls and press enter you’ll see a list of folders.  One for each demo.  Before you can run them though they must be compiled.  Don’t worry if you don’t understand why you need to do this, just take it on faith for now.
+If you enter `ls` and press enter you’ll see a list of folders.  One for each demo.  Before you can run them though they must be compiled.  Don’t worry if you don’t understand why you need to do this, just take it on faith for now.
 
 There is a small shell script supplied in the hello_pi folder called rebuild.sh which will do the compile for you, enter the following command to run it.  Ignore the Gobbledygook for now!
 
