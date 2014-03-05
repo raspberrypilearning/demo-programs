@@ -61,30 +61,48 @@ A lot of text will scroll up the screen now, you can ignore it.  It is just the 
 
 Now we’re ready to run some demos.
 
-##Step 3: Hello video
+##Step 3: Hello world
+
+First let's do a quick test that will ensure the previous compilation step worked correctly.  This rather boring program will only display the text `Hello world!` but if it works correctly then we know all the other demos should work too.
+
+Enter the following commands to go inside the `hello_world` folder and list the files.
+
+```
+cd hello_world
+ls
+```
+
+You’ll notice the `.bin` file is shown in green, this is because it is an executable file.  Meaning this is the file we run to launch the program.
+
+Use the following command to run the demo. You need the `./` to specify the current directory.  Otherwise the Linux system folders are searched for the filename you type.
+
+`./hello_world.bin`
+
+##Step 4: Hello video
 
 This will play a 15 second long full HD 1080p video clip with no sound, the intention here is to demonstrate video decode and playback capability.  You’ll see its very smooth!
 
 ![image](./images/bbb.jpg "Big Buck Bunny")
  
-Enter the following commands to go inside the `hello_video` folder and list the files.
+Enter the following commands to navigate to the `hello_video` folder and list the files.
 
 ```
+cd ..
 cd hello_video
 ls
 ```
 
-You’ll notice the `.bin` file is shown in green, this is because it is an executable file.  Meaning this is the file we run to launch the program.  This demo needs to be told what video clip to play when we run it though, so this must be the `test.h264` file (h264 is a type of video codec).
+You’ll notice the `.bin` file again.  This demo needs to be told what video clip to play when we run it though, so this must be the `test.h264` file (h264 is a type of video codec).
 
-Use the following command to run the demo. You need the `./` to specify the current directory.  Otherwise the Linux system folders are searched for the filename you type.
+You'll need the `./` to specify the current directory again.
 
 `./hello_video.bin test.h264`
 
-##Step 4: Hello triangle
+##Step 5: Hello triangle
 
 This displays a spinning cube with different images on each side.  This is intended to demonstrate Open GL ES rendering (an open source programming library for doing 3D graphics).
 
-Enter the following commands to go navigate to the `hello_triangle` folder and list its contents.
+Enter the following commands to navigate to the `hello_triangle` folder and list its contents.
 
 ```
 cd ..
@@ -98,7 +116,7 @@ You’ll again see one of the files is green, this is the executable file.  This
 
 The demo will run forever until you decide to quit.  To exit the demo press `Ctrl – C`.
 
-##Step 5: Hello triangle 2
+##Step 6: Hello triangle 2
 
 This one displays two superimposed fractals, one on top of the other.  You can move the mouse to change the shape of the fractal in real time.  This is also intended to demonstrate Open GL ES rendering.  Some of you may recognise the Mandelbrot fractal.
 
@@ -116,7 +134,7 @@ Notice the green `.bin` file?  Okay run it.
 
 Now move the mouse around and you’ll see the fractal changing.  See if you can get it to form a perfect circle.  It’s a little tricky but it can be done.  To exit the demo press `Ctrl – C`.
 
-##Step 6: Hello teapot
+##Step 7: Hello teapot
 This displays a spinning teapot with the video clip from `hello_video` texture-mapped onto its surface.  Impressive.  You may recognise the teapot model if you’re familiar with a piece of software called Blender.  This demonstrates Open GL ES rendering and video decode/playback at the same time.
 
 ![image](./images/teapot.jpg "Tea Pot")
@@ -127,7 +145,7 @@ cd hello_teapot
 ls
 ```
 
-Notice the green `.bin` file?  Okay run it.  Getting the hang of this now?
+Notice the green `.bin` file?  Okay run it.
 
 `./hello_teapot.bin`
 
@@ -162,7 +180,7 @@ Now try and run it again and you should find it will work.
 
 The demo will run forever until you quit. To exit the demo press `Ctrl – C`. 
 
-##Step 7: Hello audio
+##Step 8: Hello audio
 This demo just demonstrates audio output.  It plays a sine wave which makes a kind of WOO WOO WOO sound.
 
 ```
@@ -181,7 +199,7 @@ This will play the sound over the headphone jack on the Pi, if you’re using a 
 
 The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
 
-##Step 8: Other demos
+##Step 9: Other demos
 
 I think by now you should be getting the hang of navigating up into the parent `hello_pi` folder (using `cd ..`) and then down into one of the demo folders (using `cd hello_something`).  Try some of the other demos on your own.  The `hello_videocube` one is quite good.
 
