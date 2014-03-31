@@ -131,7 +131,7 @@ cd hello_triangle2
 ls
 ```
 
-Notice the green `.bin` file? Okay, run it!
+Notice the green `.bin` file? OK, run it!
 
 `./hello_triangle2.bin`
 
@@ -149,7 +149,7 @@ cd hello_teapot
 ls
 ```
 
-Notice the green `.bin` file? Okay, run it!
+Notice the green `.bin` file? OK, run it!
 
 `./hello_teapot.bin`
 
