@@ -1,16 +1,18 @@
-Raspberry Pi demo programs 
-=============
+# Raspberry Pi demo programs
+
 How to run the hello_pi demo programs on Raspbian
 
 ![image](./images/cover.jpg "Raspberry Pi")
 
-##So you’ve got a Raspberry Pi. Now what?
+## So you’ve got a Raspberry Pi. Now what?
+
 How about running some demo programs that showcase what the Pi is capable of?  Awesome graphics, anyone?
-Raspbian comes with a range of demo programs which you can just compile and run.  They range from simple *hello world* text output, to full 1080p HD video playback, 3D spinning teapots and real-time animating fractal patterns.
+Raspbian comes with a range of demo programs which you can just compile and run.  They range from simple *hello world- text output, to full 1080p HD video playback, 3D spinning teapots and real-time animating fractal patterns.
 These are a great way to get a feel for what the Pi can do, and to gain some familiarity with navigating around the system and running programs at the command line.
 
-##Time
-* 10 minutes
+## Time
+
+10 minutes
 
 ## Step 1: Setting Up your Pi
 First check that you have all the parts you need to get your Raspberry Pi set up and working.
@@ -24,16 +26,16 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 
 **Activity Checklist**
 
-1.	Place the SD card into the slot of your Raspberry Pi. It will only fit one way, so be careful not to break the card. 
-2.	Next connect the HDMI cable from the monitor (or TV) to the HDMI port on the Pi and turn on your monitor. 
-3.	Plug a USB keyboard and mouse into the USB slots on the Pi.
-4.	Plug in the micro USB power supply and you should see some text appear on your screen.
-5.	When prompted to login type:
+1. Place the SD card into the slot of your Raspberry Pi. It will only fit one way, so be careful not to break the card.
+2. Next connect the HDMI cable from the monitor (or TV) to the HDMI port on the Pi and turn on your monitor.
+3. Plug a USB keyboard and mouse into the USB slots on the Pi.
+4. Plug in the micro USB power supply and you should see some text appear on your screen.
+5. When prompted to login type:
 
-	```
-	Login: pi
-	Password: raspberry
-	```
+ ```
+ Login: pi
+ Password: raspberry
+ ```
 
 ##Step 2: Oh no! A command line interface!
 
@@ -83,7 +85,7 @@ Use the following command to run the demo. You need the `./` to specify the curr
 This will play a 15 second long, full HD 1080p video clip with no sound. The intention here is to demonstrate video decode and playback capability.  You’ll see that it's very smooth!
 
 ![image](./images/bbb.jpg "Big Buck Bunny")
- 
+
 Enter the following commands to navigate to the `hello_video` folder and list the files.
 
 ```
@@ -149,7 +151,7 @@ Notice the green `.bin` file?  Okay: run it!
 
 `./hello_teapot.bin`
 
-You may receive the following error when you try to run this demo.  
+You may receive the following error when you try to run this demo.
 
 ```
 Note: ensure you have sufficient gpu_mem configured
@@ -157,7 +159,7 @@ eglCreateImageKHR:  failed to create image for buffer 0x1 target 12465 error 0x3
 eglCreateImageKHR failed.
 ```
 
-Don’t worry though: if you see this error, you just need to alter one configuration setting to make it work.  
+Don’t worry though: if you see this error, you just need to alter one configuration setting to make it work.
 
 The error means the GPU (graphics processing unit) does not have enough memory to run the demo.  It’s the GPU that does all the heavy lifting when drawing 3D graphics to the screen (a bit like the graphics card in a gaming PC).  The Raspberry Pi shares its memory/RAM between the CPU and GPU ,and by default is configured to only give 64 MB of RAM to the GPU.  If we increase this to 128, that should fix the problem.
 
@@ -166,11 +168,11 @@ To do that, you'll need to enter the following command:
 `sudo raspi-config`
 
 This will open up a menu on a blue background.  Perform the following actions:
-* Go to Advanced Options.
-* Go to Memory Split.
-* Delete `64` and enter `128` instead. Press `enter`.
-* Go down to Finish.
-* Click Yes to reboot.
+- Go to Advanced Options.
+- Go to Memory Split.
+- Delete `64` and enter `128` instead. Press `enter`.
+- Go down to Finish.
+- Click Yes to reboot.
 
 After you have logged back in, enter the following command to get back to the `hello_teapot` demo:
 
@@ -180,7 +182,7 @@ Now try and run it again, and you should find it will work.
 
 `./hello_teapot.bin`
 
-The demo will run forever until you quit. To exit the demo press `Ctrl – C`. 
+The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
 
 ##Step 8: Hello audio
 This demo just demonstrates audio output.  It plays a sine wave, which makes a kind of WOO WOO WOO sound.
@@ -206,3 +208,13 @@ The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
 I think by now you should be getting the hang of navigating up into the parent `hello_pi` folder (using `cd ..`) and then down into one of the demo folders (using `cd hello_something`).  Try some of the other demos on your own.  The `hello_videocube` one is a good place to start.
 
 Good luck!
+
+## Licence
+
+Unless otherwise specified, everything in this repository is covered by the following licence:
+
+![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+***Demo Programs*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+Based on a work at https://github.com/raspberrypilearning/demo-programs
