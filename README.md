@@ -10,9 +10,38 @@ How about running some demo programs that showcase what the Pi is capable of?  A
 Raspbian comes with a range of demo programs which you can just compile and run.  They range from simple *hello world- text output, to full 1080p HD video playback, 3D spinning teapots and real-time animating fractal patterns.
 These are a great way to get a feel for what the Pi can do, and to gain some familiarity with navigating around the system and running programs at the command line.
 
-## Time
+## Requirements
 
-10 minutes
+As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need:
+
+### Hardware
+
+- Raspberry Pi
+- Micro USB power adapter
+- An SD Card with Raspbian already set up through NOOBS
+- USB Keyboard
+- HDMI cable
+- A Monitor or TV
+
+### Time
+
+- 10 minutes
+
+## Steps
+
+1. Setting Up your Pi
+1. Oh no! A command line interface!
+1. Hello world
+1. Hello video
+1. Hello triangle
+1. Hello triangle 2
+1. Hello teapot
+1. Hello audio
+1. Other demos
+
+## Worksheet & included files
+
+- [The worksheet](WORKSHEET.md)
 
 ## Licence
 
