@@ -39,7 +39,7 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 1. Hello audio
 1. Other demos
 
-## Worksheet & included files
+## Worksheet
 
 - [The worksheet](WORKSHEET.md)
 
