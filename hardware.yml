@@ -1,0 +1,18 @@
+- name: Raspberry Pi
+  img: raspberry-pi
+  url:
+- name: Micro USB power adaptor
+  img: micro-usb-power-adaptor
+  url:
+- name: SD card with Raspbian
+  img: sd-card
+  url:
+- name: USB keyboard
+  img: usb-keyboard
+  url:
+- name: HDMI cable
+  img: hdmi-cable
+  url:
+- name: Monitor or TV
+  img: monitor
+  url:
