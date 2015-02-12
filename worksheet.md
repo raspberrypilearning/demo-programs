@@ -1,4 +1,4 @@
-## Step 1: Setting Up your Pi
+## Setting Up your Pi
 First check that you have all the parts you need to get your Raspberry Pi set up and working.
 
 - Raspberry Pi
@@ -21,7 +21,7 @@ First check that you have all the parts you need to get your Raspberry Pi set up
  Password: raspberry
  ```
 
-##Step 2: Oh no! A command line interface!
+## Oh no! A command line interface!
 
 You will find yourself at the prompt below.  If you have configured your Pi to automatically go into the desktop interface, use the `start` button to log out of the desktop.
 
@@ -47,7 +47,7 @@ A lot of text will scroll up the screen now, but for this exercise you can ignor
 
 Now we’re ready to run some demos.
 
-##Step 3: Hello world
+## Hello world
 
 First, let's do a quick test that will ensure the previous compilation step worked correctly.  This rather boring program will only display the text `Hello world!` but if it works correctly then we know all the other demos should work too.
 
@@ -64,7 +64,7 @@ Use the following command to run the demo. You need the `./` to specify the curr
 
 `./hello_world.bin`
 
-##Step 4: Hello video
+## Hello video
 
 This will play a 15 second long, full HD 1080p video clip with no sound. The intention here is to demonstrate video decode and playback capability.  You’ll see that it's very smooth!
 
@@ -84,7 +84,7 @@ You'll need the `./` to specify the current directory again.
 
 `./hello_video.bin test.h264`
 
-##Step 5: Hello triangle
+## Hello triangle
 
 This displays a spinning cube with different images on each side.  This is intended to demonstrate Open GL ES rendering (an open source programming library for doing 3D graphics).
 
@@ -102,7 +102,7 @@ You’ll again see that one of the files is green. This is the executable file. 
 
 The demo will run forever until you decide to quit.  To exit the demo press `Ctrl – C`.
 
-##Step 6: Hello triangle 2
+## Hello triangle 2
 
 This one displays two superimposed fractals, one on top of the other.  You can move the mouse to change the shape of the fractal in real time.  This is also intended to demonstrate Open GL ES rendering.  Some of you may recognise the Mandelbrot fractal.
 
@@ -120,7 +120,7 @@ Notice the green `.bin` file?  Okay - run it!
 
 Now move the mouse around, and you’ll see the fractal changing.  See if you can get it to form a perfect circle.  It’s a little tricky, but it can be done.  To exit the demo press `Ctrl – C`.
 
-##Step 7: Hello teapot
+## Hello teapot
 This displays a spinning teapot with the video clip from `hello_video` texture-mapped onto its surface.  Impressive.  You may recognise the teapot model if you’re familiar with a piece of software called Blender.  This demonstrates Open GL ES rendering and video decode/playback at the same time.
 
 ![image](./images/teapot.jpg "Tea Pot")
@@ -187,18 +187,7 @@ This will play the sound over the headphone jack on the Pi. If you’re using a 
 
 The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
 
-##Step 9: Other demos
+## What next?
 
-I think by now you should be getting the hang of navigating up into the parent `hello_pi` folder (using `cd ..`) and then down into one of the demo folders (using `cd hello_something`).  Try some of the other demos on your own.  The `hello_videocube` one is a good place to start.
-
-Good luck!
-
-## Licence
-
-Unless otherwise specified, everything in this repository is covered by the following licence:
-
-![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-
-***Demo Programs*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-
-Based on a work at https://github.com/raspberrypilearning/demo-programs
+- By now you should be getting the hang of navigating up into the parent `hello_pi` folder (using `cd ..`) and then down into one of the demo folders (using `cd hello_something`).  
+- Try some of the other demos on your own.  The `hello_videocube` one is a good place to start.
