@@ -1,29 +1,6 @@
-## Setting Up your Pi
-First check that you have all the parts you need to get your Raspberry Pi set up and working.
-
-- Raspberry Pi
-- Micro USB power adapter
-- An SD Card with Raspbian already set up through NOOBS
-- USB Keyboard
-- HDMI cable
-- A Monitor or TV
-
-**Activity Checklist**
-
-1. Place the SD card into the slot of your Raspberry Pi. It will only fit one way, so be careful not to break the card.
-2. Next connect the HDMI cable from the monitor (or TV) to the HDMI port on the Pi and turn on your monitor.
-3. Plug a USB keyboard and mouse into the USB slots on the Pi.
-4. Plug in the micro USB power supply and you should see some text appear on your screen.
-5. When prompted to login type:
-
- ```
- Login: pi
- Password: raspberry
- ```
-
 ## Oh no! A command line interface!
 
-You will find yourself at the prompt below.  If you have configured your Pi to automatically go into the desktop interface, use the `start` button to log out of the desktop.
+Boot up your Raspberry Pi and you will find yourself at the prompt below.  If you have configured your Pi to automatically go into the desktop interface, use the `start` button to log out of the desktop.
 
 `pi@raspberrypi ~ $ _`
 
@@ -168,7 +145,7 @@ Now try and run it again, and you should find it will work.
 
 The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
 
-##Step 8: Hello audio
+## Hello audio
 This demo just demonstrates audio output.  It plays a sine wave, which makes a kind of WOO WOO WOO sound.
 
 ```
