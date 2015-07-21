@@ -49,7 +49,7 @@ Use the following command to run the demo. You need the `./` to specify the curr
 
 This will play a 15 second long, full HD 1080p video clip with no sound. The intention here is to demonstrate video decode and playback capability. You’ll see that it's very smooth!
 
-![image](./images/bbb.jpg "Big Buck Bunny")
+![image](images/bbb.jpg "Big Buck Bunny")
 
 Enter the following commands to navigate to the `hello_video` folder and list the files.
 
@@ -87,7 +87,7 @@ The demo will run forever until you decide to quit. To exit the demo press `Ctrl
 
 This one displays two superimposed fractals, one on top of the other. You can move the mouse to change the shape of the fractal in real time. This is also intended to demonstrate Open GL ES rendering. Some of you may recognise the Mandelbrot fractal.
 
-![image](./images/mandelbrot.jpg "Mandelbrot")
+![image](images/mandelbrot.jpg "Mandelbrot")
 
 ```
 cd ..
@@ -105,7 +105,7 @@ Now move the mouse around, and you’ll see the fractal changing. See if you can
 
 This displays a spinning teapot with the video clip from `hello_video` texture-mapped onto its surface. Impressive! You may recognise the teapot model if you’re familiar with a piece of software called Blender. This demonstrates Open GL ES rendering and video decode/playback at the same time.
 
-![image](./images/teapot.jpg "Tea Pot")
+![image](images/teapot.jpg "Tea Pot")
 
 ```
 cd ..
