@@ -4,13 +4,15 @@ Raspbian comes with a range of demo programs which you can just compile and run.
 
 ## Oh no! A command line interface!
 
-Boot up your Raspberry Pi and you will find yourself at the prompt below. If you have configured your Pi to automatically go into the desktop interface, use the `start` button to log out of the desktop.
+Boot up your Raspberry Pi and open a terminal window:
+
+![Terminal](images/terminal.png)
 
 `pi@raspberrypi ~ $ _`
 
 The text above is the command prompt. Try not to be afraid of it!  A CLI (command line interface) is actually a very quick and efficient way to use a computer.
 
-To start, navigate to the `hello_pi` folder where all the demos are stored. Enter the command below to do this. **TIP**: You can use the `TAB` key for auto-complete as you enter commands.
+To start, enter the command below to navigate to the `hello_pi` folder where all the demos are stored. **TIP**: You can use the `TAB` key for auto-complete as you enter commands.
 
 `cd /opt/vc/src/hello_pi`
 
