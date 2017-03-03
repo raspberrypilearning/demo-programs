@@ -4,7 +4,7 @@ Raspbian comes with a range of demo programs which you can just compile and run.
 
 ## Oh no! A command line interface!
 
-Boot up your Raspberry Pi and open a terminal window
+Boot up your Raspberry Pi and open a terminal window:
 
 ![Terminal](images/terminal.png)
 
