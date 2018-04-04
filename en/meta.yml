@@ -11,7 +11,11 @@ copyedit: true
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 interests: ''
 technologies: ''
-site_areas: ''
+hardware: ''
+software: ''
+site_areas: projects
+vesion: 4
+last_tested: 2017-01-01
 steps:
 - title: Introduction
 - title: What you will need
