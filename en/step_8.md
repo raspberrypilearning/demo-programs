@@ -4,7 +4,7 @@ This one displays two superimposed fractals, one on top of the other. You can mo
 
 ![image](images/mandelbrot.jpg "Mandelbrot")
 
-```
+```bash
 cd ..
 cd hello_triangle2
 ls

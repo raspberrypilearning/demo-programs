@@ -4,7 +4,7 @@ First, let's do a quick test that will ensure the previous compilation step work
 
 Enter the following commands to go inside the `hello_world` folder and list the files.
 
-```
+```bash
 cd hello_world
 ls
 ```

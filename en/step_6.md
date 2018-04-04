@@ -6,7 +6,7 @@ This will play a 15 second long, full HD 1080p video clip with no sound. The int
 
 Enter the following commands to navigate to the `hello_video` folder and list the files.
 
-```
+```bash
 cd ..
 cd hello_video
 ls
