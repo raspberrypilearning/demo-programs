@@ -4,7 +4,7 @@ This displays a spinning teapot with the video clip from `hello_video` texture-m
 
 ![image](images/teapot.jpg "Tea Pot")
 
-```
+```bash
 cd ..
 cd hello_teapot
 ls

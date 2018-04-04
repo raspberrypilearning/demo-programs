@@ -4,7 +4,7 @@ This displays a spinning cube with different images on each side. This is intend
 
 Enter the following commands to navigate to the `hello_triangle` folder and list its contents.
 
-```
+```bash
 cd ..
 cd hello_triangle
 ls
