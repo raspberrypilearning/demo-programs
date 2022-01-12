@@ -19,6 +19,7 @@ last_tested: 2017-01-01
 steps:
 - title: Introduction
 - title: What you will need
+  completion: engaged
 - title: Demo Programs
 - title: Oh no! A command line interface!
 - title: Hello world
@@ -26,6 +27,6 @@ steps:
 - title: Hello triangle
 - title: Hello triangle 2
 - title: Hello teapot
+  completion: internal
 - title: Hello audio
 - title: What next?
-
